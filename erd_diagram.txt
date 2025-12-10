@@ -1,0 +1,20 @@
+CUSTOMERS TABLE
+------------------
+customer_id (PK)
+customer_name
+customer_city
+
+PRODUCTS TABLE
+------------------
+product_id (PK)
+product_name
+category
+price
+
+TRANSACTIONS TABLE
+------------------
+transaction_id (PK)
+customer_id (FK → customers.customer_id)
+product_id (FK → products.product_id)
+quantity
+sale_date
